@@ -1,0 +1,798 @@
+header {
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    border: 1px solid red;
+    width: 100vw;
+}
+a {
+    text-decoration: none;
+}
+a:focus {
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color:rgba(191, 170, 239, 1);
+}
+
+/* BUTTONS ---------------------------------------- */
+.buttonLT:hover{
+    background-color: rgba(191, 170, 239);
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.buttonLT{
+    background-color:#F4DFB8;
+    color:#20124D;
+    border-radius: 8px;
+    border:none;
+    display:inline-block;
+    text-decoration:none;
+    text-align:center;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.15);
+    padding:16px;
+    font-family: 'Red Hat Text', sans-serif;
+    line-height:100%;
+    font-weight: 600;
+    transition-duration:0.3s;
+}
+
+/* COLORS ---------------------------------------- */
+.grayNeutral{
+    color:#F1F1F1; 
+}
+.grayPurple{
+    background-color:#F7F0FA;
+}
+.grayPeach {
+    background-color:#FFF4EF;
+}
+.grayGreen {
+    background-color:#E3F1F0;
+}
+.grayYellow{
+    background-color: #FAF2E1;
+}
+.grayDark{
+    color:#363636;
+}
+.purpleDark{
+    color: #20124d;
+}
+.greenDark {
+    color:#296B68;
+}
+.peachDark{
+    color: #4D1227;
+}
+
+/* TYPOGRAPHY ---------------------------------------- */
+
+#PageTitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Red Hat Text', sans-serif;    
+    letter-spacing: 0.01em;
+    line-height: 140%;
+    font-weight: 400;
+    color: #494949;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.pbold {
+    font-weight: 500;
+}
+.mobileBody {
+    font-size: 16px;
+}
+
+#h6-1{
+    font-weight: 400;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    line-height: 120%;
+    text-decoration: none;
+    color: #20124d;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 85px;
+    max-width: 400px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 48px;
+}
+h3{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;    
+    letter-spacing: 0.01em;
+    color: #20124d;
+}
+
+/* PADDING + MARGINS ---------------------------------------- */
+
+.pad-top-1{
+    padding-top: 104px;
+}
+.pad-top-2{
+    padding-top: 80px;
+}
+.pad-top-3{
+    padding-top: 64px;
+}
+.pad-top-4{
+    padding-top: 40px;
+}
+.pad-top-5{
+    padding-top: 24px;
+}
+.pad-top-6{
+    padding-top: 16px;
+}
+
+.marg-top-1{
+    margin-top:104px;
+}
+.marg-top-2{
+    margin-top: 6%;
+}
+.marg-top-3{
+    margin-top:64px;
+}
+.marg-top-5{
+    margin-top:16px;
+}
+/* NAVBAR  + HOME HERO----------------------------- */
+.homeHeader{
+    height: 648px;
+    max-height: 650px;
+    background-image:url(../images/headshot_LG.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: 20% center;
+    width: 100vw;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+.homeH1 {
+    padding: 8% 7% 1%;
+    margin: 0;
+}
+.homeH4 {
+    padding: 1% 7%;
+    margin: 0;
+}
+.homeH6 {
+    padding-left: 7%;
+    width: 24%;
+    margin: 0;
+}
+#buttonHero{
+    position:relative;
+    margin: 2% 0 0 7%;
+    width: 180px;
+}
+
+.navbarContainer {
+    display: flex;
+    padding-top: 0;
+    background-color: rgba(234, 233, 235, 0.5);
+    margin:0;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+}
+nav { 
+    display: contents;  
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    color: #20124D;
+    margin-left: auto; 
+}
+.navListItem {
+    color: #20124D;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none; 
+    padding: 16px;
+    margin-right: 1em;
+    transition-duration: 0.2s;
+}
+.navListItem:hover {
+    background-color:rgba(191, 170, 239, 0.9);
+}
+.navListItem.active {
+    border-bottom: 4px solid rgba(191, 170, 239); 
+}
+
+#homeLink {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 16px;
+    margin-left: 1em;
+    color:#20124D;
+    transition-duration: 0.2s;
+}
+#homeLink:hover {
+    background-color:rgba(191, 170, 239, 0.9);
+}
+
+
+/* HOME SECTION COMPONENTS ---------------------------------------- */
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0px;
+    max-width: 1800px;
+    margin: 0 auto;
+    transition: padding 1.5s ease-in-out;
+}
+.homeCard{
+    max-width: 490px;
+    opacity: 0.9;
+    background-color: #F8ECD4;
+    border-radius:24px;
+    color: #20124D;
+    padding: 0px 0px 1em 2em;
+}
+.h6homeCard {
+    font-weight: 700;
+    padding: 1.5em 0px 0px;
+    width: 40%;
+    margin: 2em 0px;
+}
+.h3homeCard {
+    padding: 0;
+    width: 88%;
+    margin: 0;
+}
+.phomeCard{ 
+    width: 90%;
+    padding-bottom: 1em 0px;
+}
+
+
+/* HOME SECTION PROJECTS 1-3 ----------------------------------------*/
+.projectContainer-LF {
+    position: relative;
+    width: 65%;
+    height: 549px;
+    left: 0px;
+    border-radius: 0px 24px 24px 0px;
+    margin-bottom: 160px;
+}
+.homepicLeft{
+    position: relative;
+    width: 550px;
+    height: auto;
+    margin-top: 2.5em;
+}
+#project-LF{
+    position: absolute;
+    bottom: 10%;
+    right: -40%;
+}
+.projectContainer-RT {
+    position: relative;
+    width: 65%;
+    height: 549px;
+    align-self: flex-end;
+    margin-bottom: 160px;
+    border-radius: 24px 0px 0px 24px;
+}
+.homepicRight {
+    align-self: flex-end;
+    margin-left: 16%;
+    position: relative;
+    top: 80px;
+    right: 0px; 
+    width: 560px;
+}
+#project-RT{
+    position: absolute;
+    bottom: 10%; 
+    left: -40%   
+}
+
+.arrows-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    height: 100%;
+    width: auto;
+}
+.center-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.center-row h2{
+    padding: 0px 1em;
+}
+
+/* #arrow-top{
+    animation: bounceTop .7s infinite;
+}
+
+#arrow-left{
+    animation: bounceLeft .7s infinite;
+}
+@keyframes bounceTop{
+    from{
+        padding-block-start:0;
+    }
+    to{
+        padding-block-start:1%;
+    }
+} */
+
+/* FOOTER ---------------------------------------- */
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 7%;
+    margin-bottom: 0px;
+    width: 100vw;
+    background-color: #F7F0FA;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    display: flex;
+    padding: 0 1em;
+    text-align: center;
+    color:#363636;
+}
+
+.copyright p {
+    padding: 0px 16px;
+}
+
+#RHP{
+    color: #20124D;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    margin-top: 3em;
+}
+
+#social-li {
+    width: 40px;
+    height: 40px;
+}
+#social-li img{
+    width: 100%;
+}
+.social:hover{
+    background-color: white;
+    box-shadow: 1px 1px 8px rgba(191, 170, 239, 0.9);
+    border-radius: 8px;
+}
+
+/* WORK PAGE ---------------------------------------- */
+.work-h1{
+    position: relative;
+    left: 104px;
+    top: 104px;
+}
+
+.work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 160px;
+    margin-left: 7%;
+    width: 86%;
+    justify-content: space-between;
+}
+
+.work-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 36%;
+    min-width: 448px;
+    padding: 1.5em 1em 1.5em 2em;
+    border-radius: 24px;
+    margin-top: 7%;
+}
+.work-card h4 {
+    width: 60%;
+    margin: 1.5em 0px;
+}
+.work-card p {
+    width: 80%;
+    margin: 1.5em 0px;
+}
+.work-card img {
+    margin-top: 48px;
+    justify-self: center;
+    height: auto;
+    width: 100%;
+}
+
+/* ABOUT PAGE ----------------------------------------*/
+
+.page-intro {
+    display: flex;
+    margin: 4% 7%;
+    justify-content: space-between;
+}
+.page-intro-LF{
+    width: 48%;
+    flex-direction: column;
+}
+.page-intro-RT{
+   margin-left: 7%;
+   margin-top: 4%;
+}
+.round-pic{
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+}
+.about-h1{
+    max-width: 330px;
+    margin: 104px 7% 0;
+}
+.about-h3{
+    margin-left: 7%;
+}
+.process-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    width: auto;
+    justify-content: space-between;
+}
+.process-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 36%;
+    min-width: 416px;
+    margin: 0px 16px;
+}
+.process-card img {
+    height: auto;
+    max-height: 40%;
+    justify-content: center;
+    align-self: flex-start;
+}
+.process-card h6 {
+    margin-bottom: 0;
+    justify-self: flex-end;
+}
+.process-card p {
+    justify-self: flex-end;
+    width: 80%;
+    height: auto;
+    padding-right: 4%;
+}
+.polaroid-cards{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    /* margin: 5em 0px 0px 0px; */
+}
+.polaroids{
+    padding: 3% 3% 16% 3%;
+    background-color: #f3f3f3;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.11);
+    width: 90%;
+    height: auto;
+}
+.polaroid1{
+    margin-left: 16%;
+    margin-top: 16%;
+    transform: rotate(8deg);
+}
+.polaroid2{
+    transform: rotate(-5deg);
+    margin-top: 1%;
+    margin-left: -2%;
+}
+.polaroid3{
+    transform: rotate(-16deg);
+    margin-top: 26%;
+    margin-left: -16%;
+}
+.polaroid4{
+    transform: rotate(13deg);
+    margin-top: 1%;
+    margin-left: -24%;
+}
+.behind {
+    z-index: -1;
+}
+
+.contact-section{
+    background: url(../images/about/zoe_climbing_2.jpeg);
+    background-position: center 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 208px;
+}
+.contact-section p{
+    margin-right: 20%;
+    margin-bottom: 4em;
+}
+.contact-section h3{
+    margin-bottom: 0;
+}
+
+/* MEDIA QUERIES ----------------------------------*/
+@media screen and (min-width:1800px) {
+    .big-screen{
+        background-color: rgba(248, 236, 212, 0.25);
+    }  
+    .projects{
+        background-color: white;
+        padding-top: 3% !important; 
+    }
+  }
+@media screen and (max-width: 1024px) {  
+/* MOBILE STYLE */
+
+/* MOBILE TYPOGRAPHY */
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 110%;
+    max-width: 300px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 36px;
+}
+h3{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+h6{
+    font-size: 18px;
+    font-weight: 600;
+}
+p{
+    font-size: 16px;
+}
+
+
+/* MOBILE NAV   ---------------------- */
+
+.navbarContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-top: 0.5em;
+    background-color: rgba(234, 233, 235, 0.5);
+    margin:0;
+    width: 100vw;
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    color: #20124D;
+    margin: 0 0 0.5em 0;
+    padding: 0.5em 0;
+    width: 90vw;
+    justify-content: space-between;
+}
+.navListItem {
+    color: #20124D;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none; 
+    padding: 0.5em;
+    margin: 0;
+    transition-duration: 0.2s;
+}
+nav a:hover {
+    background-color:rgba(191, 170, 239, 0.9);
+}
+
+#homeLink {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0;
+    color:#20124D;
+    transition-duration: 0.2s;
+}
+#homeLink:hover {
+    background-color:rgba(191, 170, 239, 0.9);
+}
+
+/* MOBILE HOMEPAGE------- */
+.homeHeader{
+    height: 627px;
+    background-image:url(../images/headshot_MOB.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: right 30% bottom 100%;
+    width: 100vw;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeH1 {
+    padding-top: 2.5em; 
+}
+.homeH4 {
+    width: 80%;
+}
+.homeH6 {
+    width: 16em;
+    padding-top: 0.5em;
+}
+
+.projects{
+    padding-top:12%;
+}
+.projectContainer-LF{
+    width: 90%;
+    margin-top: 4%;
+}
+.projectContainer-RT{
+    width: 90%;
+    margin-top: 4%;
+}
+.projectContainer-LF img, .projectContainer-RT img{
+    width: 80%;
+}
+.homeCard{
+    margin-left: 8%;
+    padding:0px 0 1em 1.5em;
+}
+#project-LF{
+    bottom:-18%;
+    right:-11%;
+}
+#project-RT{
+    bottom:-18%;
+    margin-right:8%;
+    left:-19%;
+}
+.homepicRight{
+    right: 20%;
+}
+.h6homeCard{
+    margin:1.5em 0px;
+    padding:0;
+    width: 90%;
+}
+.h3homeCard{
+    padding: 0px;
+    margin: 0px;
+    width: 96%;
+}
+.phomeCard{
+    width: 94%;
+}
+.center-row h2{
+    font-size: 18px;
+    padding: 0 0.5em;
+    text-align: center;
+}
+.arrows-container{
+    margin-top: 7%;
+    padding: 4%;
+}
+.footer{
+    margin-top: 14%;
+}
+
+/* MOBILE ABOUT */
+.about-h1{
+    max-width:60%;
+}
+.page-intro{
+    flex-direction: column-reverse; 
+}
+.page-intro-LF{
+    width: 86%;
+    margin: 7%;
+}
+.about-h3{
+    margin-left:10%;
+}
+.process-card{
+    min-width: 86%;
+}
+.polaroid-cards{
+    flex-direction: column;
+    margin-left: 22%;
+    width: 64vw;
+}
+.mobile-pad-left{
+    padding-left:60%;
+}
+.mobile-pad-left h3{
+    padding-top: 8%;
+}
+.mobile-pad-left p{
+    margin-bottom: 2em;
+    margin-right: 10%;
+}
+
+/* MOBILE WORK */
+
+.work-h1{
+    left: 7%;
+}
+.work-card{
+    min-width: 86%;
+}
+
+} /* end of mobile media query */
