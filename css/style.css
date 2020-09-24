@@ -5,6 +5,7 @@ body {
     margin: 0px;
     border: 1px solid red;
     width: 100vw;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -239,7 +240,9 @@ nav ul {
 .navListItem.active {
     border-bottom: 4px solid rgba(191, 170, 239); 
 }
-
+.navListItem:active{
+    background-color: transparent;
+}
 #homeLink {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -267,8 +270,7 @@ nav ul {
 }
 .homeCard{
     max-width: 490px;
-    opacity: 0.9;
-    background-color: #F8ECD4;
+    background-color: rgba(248, 236, 212, 0.9);
     border-radius:24px;
     color: #20124D;
     padding: 0px 0px 1em 2em;
@@ -304,11 +306,15 @@ nav ul {
     width: 550px;
     height: auto;
     margin-top: 2.5em;
+    transition: all 0.3s ease-in-out;
 }
 #project-LF{
     position: absolute;
     bottom: 10%;
     right: -40%;
+    /* animation-name: slideLeft;
+    animation-duration: 1s;
+    visibility: visible; */
 }
 .projectContainer-RT {
     position: relative;
@@ -325,11 +331,15 @@ nav ul {
     top: 80px;
     right: 0px; 
     width: 560px;
+    transition: all 0.3s ease-in-out;
 }
 #project-RT{
     position: absolute;
     bottom: 10%; 
     left: -40%   
+}
+.homepicRight:hover, .homepicLeft:hover{
+    transform: scale(1.025);
 }
 
 .arrows-container{
@@ -408,23 +418,60 @@ nav ul {
         transform: translateY(0em);
     }
 }
-
-
-/* #arrow-top{
-    animation: bounceTop .7s infinite;
-}
-
-#arrow-left{
-    animation: bounceLeft .7s infinite;
-}
-@keyframes bounceTop{
+/* animation is in project-LF */
+/* @keyframes slideLeft {
     from{
-        padding-block-start:0;
+        transform: translateX(900px);
     }
     to{
-        padding-block-start:1%;
+        transform: translateX(0px);
     }
 } */
+
+.animation-element.slide-left {
+    opacity: 0;
+    -moz-transition: all 700ms linear;
+    -webkit-transition: all 700ms linear;
+    -o-transition: all 700ms linear;
+    transition: all 700ms linear;
+    -moz-transform: translate3d(400px, 0px, 0px);
+    -webkit-transform: translate3d(400px, 0px, 0px);
+    -o-transform: translate(400px, 0px);
+    -ms-transform: translate(400px, 0px);
+    transform: translate3d(400px, 0px, 0px);
+  }
+  
+  .animation-element.slide-left.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+  
+  .animation-element.slide-right {
+    opacity: 0;
+    -moz-transition: all 700ms linear;
+    -webkit-transition: all 700ms linear;
+    -o-transition: all 700ms linear;
+    transition: all 700ms linear;
+    -moz-transform: translate3d(-400px, 0px, 0px);
+    -webkit-transform: translate3d(-400px, 0px, 0px);
+    -o-transform: translate(-400px, 0px);
+    -ms-transform: translate(-400px, 0px);
+    transform: translate3d(-400px, 0px, 0px);
+  }
+  
+  .animation-element.slide-right.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+  
 
 /* FOOTER ---------------------------------------- */
 .footer{
@@ -713,8 +760,8 @@ nav ul {
     margin: 0;
     transition-duration: 0.2s;
 }
-nav a:hover {
-    background-color:rgba(191, 170, 239, 0.9);
+nav a:hover, .navListItem:hover, #homeLink:hover {
+    background-color: transparent;
 }
 
 #homeLink {

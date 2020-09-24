@@ -8,11 +8,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css"> 
         <link href="images/zr-trans.png" rel="icon" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     </head>
     <body>
         <header>
             <div class="navbarContainer">
-                <a id="homeLink">zoe rem</a>
+                <a href="zoerem.html" id="homeLink">zoe rem</a>
                 <nav>
                     <ul>
                         <li><a href="pages/about.html" class="navListItem">about</a></li>
@@ -38,27 +40,37 @@
         </section> 
         <section class="big-screen">
             <div class="projects">
-                <div class="projectContainer-LF grayPurple" id="pC-1">   
-                    <img src="./images/FSCwhiteiphoneleftSM.png" class="homepicLeft">
-                    <div class="homeCard" id="project-LF">
+                <div class="projectContainer-LF grayPurple">   
+                    <a href="pages/fsc.html">
+                        <div>
+                            <img src="../mysite/images/FSCwhiteiphoneleftSM.png" class="homepicLeft">
+                        </div>
+                    </a>
+                    <div class="homeCard animation-element slide-left" id="project-LF">
                         <h6 class="h6homeCard">SITE REDESIGN</h6>
                         <h3 class="h3homeCard">Family Support Center of South Sound</h3>
                         <p class="phomeCard .desktopBody purpleDark">Case study of a non-profit organization site with full responsive web design.</p>
                     </div>
                 </div>
-                <div class="projectContainer-RT grayGreen" id="pC-2">    
-                    <img src="./images/usarcrightsidemacbook_small.png" class="homepicRight">
-                    <div class="homeCard" id="project-RT">
+                <div class="projectContainer-RT grayGreen">    
+                    <a href="pages/usarc.html">
+                        <div>
+                            <img src="../mysite/images/usarcrightsidemacbook_small.png" class="homepicRight">
+                        </div>
+                    </a>
+                    <div class="homeCard animation-element slide-right" id="project-RT">
                         <h6 class="h6homeCard">SITE REDESIGN</h6>
                         <h3 class="h3homeCard">U.S. Arctic <br>Research Commission</h3>
                         <p class="phomeCard .desktopBody purpleDark">Case study of a government agency site redeisgn with full responsive mobile and desktop versions.</p>
                     </div>
                 </div>
-                <div class="projectContainer-LF grayPeach" id="pC-3">    
-                    <div>
-                        <img src="./images/SkyMixblackleft.png" class="homepicLeft">
-                    </div>
-                    <div class="homeCard" id="project-LF">
+                <div class="projectContainer-LF grayPeach"> 
+                    <a href="pages/skymix.html">   
+                        <div>
+                            <img src="../mysite/images/SkyMixblackleft.png" class="homepicLeft">
+                        </div>
+                    </a>
+                    <div class="homeCard animation-element slide-left" id="project-LF">
                         <h6 class="h6homeCard">MOBILE APP</h6>
                         <h3 class="h3homeCard">SkyMix</h3>
                         <p class="phomeCard .desktopBody purpleDark">Case study of a mobile app or feature add-on for an existing digital music service, combining music and social media features on one platform.</p>
@@ -72,7 +84,7 @@
                         <img class="arrow" id="arrow-right" src="./images/arrow-right.png">
                     </div>
                     <img class="arrow" id="arrow-bottom" src="./images/arrow-down.png">
-                    <p class="pbold pad-top-3">look around: I made this site.</p>
+                    <p class="pbold pad-top-4">look around: I made this site.</p>
                     <a href="https://github.com/zoerem/ZR-repo/tree/master/mysite" target="_blank" class="buttonLT marg-top-5">view my code
                     </a>
                 </div>
@@ -89,8 +101,6 @@
                 </div>
             </footer>
         </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
     </body>
     </html>
     
