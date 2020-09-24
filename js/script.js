@@ -29,8 +29,6 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 
-
-
 // THINGS THAT DIDN'T WORK BUT MIGHT BE USEFUL
 
 // $("#project-LF").css("transform", "translateX(700px)");
